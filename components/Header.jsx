@@ -7,6 +7,7 @@ import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
+    <>
     <header className="py-8 xl:py-12 text-white">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
@@ -29,6 +30,11 @@ const Header = () => {
         </div>
       </div>
     </header>
+    {/* Under construction message */}
+      <div className="bg-red-600 text-white text-center py-2">
+        <p>This site is currently under construction. Stay tuned for updates!</p>
+      </div>
+    </>
   );
 };
 export default Header;
