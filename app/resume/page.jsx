@@ -10,11 +10,11 @@ import {
   FaJs,
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiReact, SiExpo } from "react-icons/si";
 
 const about = {
   title: "About me",
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+  description: "Motivated Software Engineer with a strong academic foundation and proven coding skills, seeking to leverage my skills in a dynamic role. Possessing one year of internship experience where I gained practical experience in Full Stack Development. I am eager to contribute to innovative projects, collaborate with talented teams, and continue learning in a professional software development environment.",
   info: [
     {
       fieldName: "Name",
@@ -52,33 +52,33 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
-    "fffffffffffffffffffffffffffffffffffffffffffffffff    f      fffffff    ffffff fffffs ssssss a",
+    "Over the past year, I have actively developed and tested numerous APIs using Django and Go, employing Postman for thorough API testing. I also contributed to the frontend development of a mobile application with React Native and Expo. My skillset includes familiarity with Redis and PostgreSQL for data management, and web development with React.js.",
   items: [
     {
       company: "Hexmos",
-      position: "Full Stack Developer(Intern)",
+      position: "Software Developer Intern",
       duration: "2024-2025 (1 year)",
     },
-    {
-      company: "Hexmos",
-      position: "Full Stack Developer(Intern)",
-      duration: "2024-2025",
-    },
-    {
-      company: "Hexmos",
-      position: "Full Stack Developer(Intern)",
-      duration: "2024-2025",
-    },
-    {
-      company: "Hexmos",
-      position: "Full Stack Developer(Intern)",
-      duration: "2024-2025",
-    },
-    {
-      company: "Hexmos",
-      position: "Full Stack Developer(Intern)",
-      duration: "2024-2025",
-    },
+    // {
+    //   company: "Hexmos",
+    //   position: "Full Stack Developer(Intern)",
+    //   duration: "2024-2025",
+    // },
+    // {
+    //   company: "Hexmos",
+    //   position: "Full Stack Developer(Intern)",
+    //   duration: "2024-2025",
+    // },
+    // {
+    //   company: "Hexmos",
+    //   position: "Full Stack Developer(Intern)",
+    //   duration: "2024-2025",
+    // },
+    // {
+    //   company: "Hexmos",
+    //   position: "Full Stack Developer(Intern)",
+    //   duration: "2024-2025",
+    // },
   ],
 };
 
@@ -87,7 +87,7 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
   description:
-    "fffffffffffffffffffffffffffffffffffffffffffffffff    f      fffffff    ffffff fffffs ssssss a",
+    "Currently pursuing an engineering degree in CSBS Computer Science and Business System demonstrating strong academic performance with an 8.9 aggregate CGPA ",
   items: [
     {
       institution: "St. Joseph Engineering College, Mangalore",
@@ -98,20 +98,20 @@ const education = {
     {
       institution: "Online Program",
       degree: "Large Application Practicum",
-      duration: "2025",
+      duration: "4 weeks",
     },
     {
-      institution: "St. Joseph Engineering College, Mangalore",
+      institution: "Jawahar Navodaya Vidyalaya, Mangalore",
       degree:
-        "Bachelor of Engineering in Computer Science and Business Systems",
-      duration: "2022-2026",
+        "High School and Pre-University Education",
+      duration: "2015-2022",
     },
-    {
-      institution: "St. Joseph Engineering College, Mangalore",
-      degree:
-        "Bachelor of Engineering in Computer Science and Business Systems",
-      duration: "2022-2026",
-    },
+    // {
+    //   institution: "St. Joseph Engineering College, Mangalore",
+    //   degree:
+    //     "Bachelor of Engineering in Computer Science and Business Systems",
+    //   duration: "2022-2026",
+    // },
   ],
 };
 
@@ -119,14 +119,14 @@ const education = {
 const skills = {
   title: "My Skills",
   description:
-    "ffffff ffff ffffff ffffff ffffff ffffffff ffffffff , fffff. fffff.",
+    "Versatile developer with hands-on experience across multiple stacks, including Python (Django) for backend, JavaScript (React, Expo) for frontend and mobile, and Golang for efficient backend solutions. Skilled in styling with Tailwind CSS.",
   skillList: [
     {
-      icon: <FaHtml5 />,
+      icon: <SiReact />,
       name: "React Native",
     },
     {
-      icon: <FaCss3 />,
+      icon: <SiExpo />,
       name: "Expo",
     },
     {
@@ -265,8 +265,9 @@ const Resume = () => {
             <TabsContent value="skills" className="w-full h-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <div>
-                  <h3 className="text-4x font-bold">{skills.title}</h3>
-                  <p className="max-w-[600px] text-white/60 mx-auto xl:text-left ">
+                  <h3 className="text-4xl font-bold">{skills.title}</h3>
+                  <br></br>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                     {skills.description}
                   </p>
                 </div>
