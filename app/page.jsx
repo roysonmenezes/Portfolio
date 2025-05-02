@@ -1,10 +1,12 @@
-import { Button } from "@/components/ui/button";
-import { FiDownload } from "react-icons/fi";
 
+"use client";
 // compoents
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
+
+import { Button } from "@/components/ui/button";
+import { FiDownload } from "react-icons/fi";
 
 const Home = () => {
   return (
@@ -24,10 +26,27 @@ const Home = () => {
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
+              {/* <Button
+                as="a" // Use the button as an anchor tag
+                href="/assets/resume/Royson_Menezes_resume.pdf"
+                download="Royson_Menezes_Resume.pdf"
+                variant="outline"
+                size="lg"
+                className="uppercase flex items-center gap-2"
+              >
+                <span>Download C V</span>
+                <FiDownload className="text-xl " />
+              </Button> */}
               <Button
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
+                onClick={() => {
+                  const link = document.createElement("a");
+                  link.href = "/assets/resume/Royson_Menezes_resume.pdf"; // Correct file path
+                  link.download = "Royson_Menezes_Resume.pdf"; // Suggested file name
+                  link.click();
+                }}
               >
                 <span>Download CV</span>
                 <FiDownload className="text-xl " />
