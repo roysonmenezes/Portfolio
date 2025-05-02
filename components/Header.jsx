@@ -32,7 +32,7 @@ const Header = () => {
     </header>
     {/* Under construction message */}
       <div className="bg-red-600 text-white text-center py-2">
-        <p>This site is currently under construction. Stay tuned for updates!</p>
+        <p>This site is currently under construction. i have to add the projects and modify contents here. Stay tuned for updates!</p>
       </div>
     </>
   );
